@@ -1,7 +1,7 @@
 import React from 'react';
+import Layout from './layout';
+import './app.scss';
 
-const App = () => (
-  <h1>Yandex Music</h1>
-)
+const App = () => (<Layout />);
 
 export default App;

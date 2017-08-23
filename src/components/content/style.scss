@@ -1,0 +1,8 @@
+.content {
+  display: flex;
+  background-color: #666;
+  width: calc(100% - 100px);
+  height: 100vh;
+  transform: translateX(100px);
+  z-index: 10;
+}
