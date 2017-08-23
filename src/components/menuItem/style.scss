@@ -1,3 +1,6 @@
+@import "../app/variables.scss";
+
 .menuItem {
-  background-color: #444;
+  padding: 10px;
+  background-color: lighten($main-color, 2);
 }

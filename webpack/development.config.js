@@ -23,7 +23,7 @@ module.exports = merge([{
         loader: 'babel-loader',
       },
       {
-        test: /\.scss$/,
+        test: [/\.scss$/, /\.css$/],
         use: [
           { loader: 'style-loader' },
           { loader: 'css-loader' },

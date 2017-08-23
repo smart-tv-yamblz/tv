@@ -1,6 +1,8 @@
+@import "../app/variables.scss";
+
 .content {
   display: flex;
-  background-color: #666;
+  background-color: $main-color;
   width: calc(100% - 100px);
   height: 100vh;
   transform: translateX(100px);
