@@ -1,6 +1,6 @@
 import React from 'react';
-import Layout from './layout';
-import './app.scss';
+import Layout from '../layout';
+import './style.scss';
 
 const App = () => (<Layout />);
 
