@@ -2,27 +2,33 @@ const path = require('path');
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const {
-  optimize: {
-    UglifyJsPlugin
-  }
-} = require('webpack');
+const { optimize: { UglifyJsPlugin } } = require('webpack');
 
 module.exports = merge([{
   entry: [
-    path.join(__dirname, '../src/index.js')
+    path.join(__dirname, '../src/index.js'),
   ],
   output: {
     path: path.join(__dirname, '../www'),
     filename: 'assets/js/bundle.js',
-    publicPath: './'
+    publicPath: './',
   },
   module: {
-    rules: [{
-      test: /\.js$/,
-      exclude: /node_modules/,
-      loader: 'babel-loader'
-    }]
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'css-loader' },
+          { loader: 'sass-loader' },
+        ],
+      },
+    ],
   },
   plugins: [
     new UglifyJsPlugin({
@@ -30,7 +36,7 @@ module.exports = merge([{
       comments: false,
       mangle: {
         screw_ie8: true,
-        keep_fnames: true
+        keep_fnames: true,
       },
       compress: {
         screw_ie8: true,
@@ -40,8 +46,8 @@ module.exports = merge([{
         unused: true,
         warnings: false,
         drop_console: true,
-        unsafe: true
-      }
+        unsafe: true,
+      },
     }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
@@ -56,8 +62,8 @@ module.exports = merge([{
         useShortDoctype: true,
         removeScriptTypeAttributes: true,
         removeStyleLinkTypeAttributes: true,
-        minifyJS: true
-      }
-    })
-  ]
+        minifyJS: true,
+      },
+    }),
+  ],
 }]);

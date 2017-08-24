@@ -1,0 +1,6 @@
+@import "../app/variables.scss";
+
+.contentA {
+  flex-grow: 1;
+  background-color: darken($main-color, 10);
+}
