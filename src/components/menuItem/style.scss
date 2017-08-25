@@ -1,6 +1,14 @@
 @import "../app/variables.scss";
 
 .menuItem {
-  padding: 10px;
-  background-color: lighten($main-color, 2);
+  padding: 1.5em;
+  color: rgba($menu-text, 0.5);
+  // Navigation target
+  &.data-element {
+    outline: none;
+    &-target {
+      background-color: $menu-select;
+      color: $menu-text;
+    }
+  }
 }
