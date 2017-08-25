@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "clear-assets": "rm -rf ./www/assets",
-    "copy-dev-html": "cp ./src/index.dev.html ./www/index.html",
+    "copy-dev-html": "cp ./src/index.dev.html ./index.html",
     "start": "npm run copy-dev-html && webpack-dev-server --env development",
     "build": "npm run clear-assets && webpack --env production"
   },

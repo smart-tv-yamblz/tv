@@ -11,7 +11,7 @@ module.exports = merge([{
     path.join(__dirname, '../src/index.js'),
   ],
   output: {
-    path: path.join(__dirname, '../www'),
+    path: path.join(__dirname, '../'),
     filename: 'bundle.js',
     publicPath: 'http://localhost:8080/',
   },
@@ -39,6 +39,6 @@ module.exports = merge([{
     stats: 'errors-only',
     host: 'localhost',
     port: 8080,
-    contentBase: path.join(__dirname, '../www'),
+    contentBase: path.join(__dirname, '../'),
   },
 }]);

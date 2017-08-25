@@ -9,7 +9,7 @@ module.exports = merge([{
     path.join(__dirname, '../src/index.js'),
   ],
   output: {
-    path: path.join(__dirname, '../www'),
+    path: path.join(__dirname, '../'),
     filename: 'assets/js/bundle.js',
     publicPath: './',
   },
