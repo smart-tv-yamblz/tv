@@ -1,7 +1,7 @@
 import React from 'react';
-import Content from '../../components/content/index';
-import ListWrapper from '../../components/listWrapper/index';
-import DetailWrapper from '../../components/detailWrapper/index';
+import Content from '../../components/content';
+import ListWrapper from '../../components/listWrapper';
+import DetailWrapper from '../../components/detailWrapper';
 
 const Feed = () => (
   <Content>
