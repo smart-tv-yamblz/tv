@@ -1,11 +1,11 @@
 @import "../app/variables.scss";
 
 .menu {
-  background-color: darken($main-color, 5);
   position: absolute;
   left: 0;
   top: 0;
-  width: 200px;
+  width: 20%;
   height: 100vh;
+  background-color: $menu-bg;
   z-index: 0;
 }
