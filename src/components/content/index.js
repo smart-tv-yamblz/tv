@@ -1,12 +1,9 @@
 import React from 'react';
-import ContentA from '../contentA';
-import ContentB from '../contentB';
 import './style.scss';
 
-const Content = () => (
+const Content = ({ children }) => (
   <div className="content">
-    <ContentA />
-    <ContentB />
+    {children}
   </div>
 );
 
