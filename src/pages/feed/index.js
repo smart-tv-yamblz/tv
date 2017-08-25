@@ -1,9 +1,9 @@
 import React from 'react';
-import Content from '../content';
-import ListWrapper from '../listWrapper';
-import DetailWrapper from '../detailWrapper';
+import Content from '../../components/content/index';
+import ListWrapper from '../../components/listWrapper/index';
+import DetailWrapper from '../../components/detailWrapper/index';
 
-const FeedPage = () => (
+const Feed = () => (
   <Content>
     <ListWrapper>
       Список подборок
@@ -14,4 +14,4 @@ const FeedPage = () => (
   </Content>
 );
 
-export default FeedPage;
+export default Feed;

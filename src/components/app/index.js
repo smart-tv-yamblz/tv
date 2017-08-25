@@ -6,8 +6,8 @@ import { syncHistoryWithStore, routerReducer } from 'react-router-redux';
 import Layout from '../layout';
 import './style.scss';
 
-import MyMusicPage from '../myMusicPage';
-import FeedPage from '../feedPage';
+import MyMusic from '../../pages/myMusic';
+import Feed from '../../pages/feed';
 
 const store = createStore(
   combineReducers({
@@ -21,8 +21,8 @@ const App = () => (
   <Provider store={store}>
     <Router history={history}>
       <Route component={Layout}>
-        <Route path="/" component={MyMusicPage} />
-        <Route path="/feed" component={FeedPage} />
+        <Route path="/" component={MyMusic} />
+        <Route path="/feed" component={Feed} />
       </Route>
     </Router>
   </Provider>
