@@ -1,5 +1,6 @@
 # Exclude content of www directory
 www/*
+/index.html
 
 # Keep empty www directory
 !www/.gitkeep
