@@ -1,12 +1,11 @@
 import React from 'react';
 import Menu from '../menu';
-import Content from '../content';
 import './style.scss';
 
-const Layout = () => (
+const Layout = ({ children }) => (
   <div className="layout">
     <Menu />
-    <Content />
+    {children}
   </div>
 );
 
