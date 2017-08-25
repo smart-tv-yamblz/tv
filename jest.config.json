@@ -1,0 +1,8 @@
+{
+  "moduleNameMapper": {
+    "\\.scss$": "identity-obj-proxy"
+  },
+  "testMatch": [
+    "<rootDir>/src/**/*.(spec|test).(js|jsx)"
+  ]
+}
